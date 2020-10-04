@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+
+<!-- R1: MA2010   R2: MS210   R3: MH50 -->
+
+<robot name="cluster_ma2010_ms210_mh50" xmlns:xacro="http://ros.org/wiki/xacro">
+	<xacro:include filename="$(find core)/urdf/cluster_ma2010_ms210_mh50_macro.xacro" />
+	<xacro:cluster_ma2010_ms210_mh50 prefix=""/>
+
+</robot>
