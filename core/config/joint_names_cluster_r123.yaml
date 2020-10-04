@@ -1,0 +1,10 @@
+controller_joint_names: [
+  'r1_joint_origin',
+  'r1_joint_1_s', 'r1_joint_2_l', 'r1_joint_3_u', 'r1_joint_4_r', 'r1_joint_5_b', 'r1_joint_6_t',
+
+  'r2_joint_origin',
+  'r2_joint_s', 'r2_joint_l', 'r2_joint_u', 'r2_joint_r', 'r2_joint_b', 'r2_joint_t',
+
+  'r3_joint_origin',
+  'r3_joint_1_s', 'r3_joint_2_l', 'r3_joint_3_u', 'r3_joint_4_r', 'r3_joint_5_b', 'r3_joint_6_t'
+  ]
