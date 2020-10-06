@@ -1,0 +1,13 @@
+topic_list:
+    - name: cluster_r1_controller
+      ns: cluster_r123
+      group: 0
+      joints: ['r1_joint_1_s', 'r1_joint_2_l', 'r1_joint_3_u', 'r1_joint_4_r', 'r1_joint_5_b', 'r1_joint_6_t']
+    - name: cluster_r2_controller
+      ns: cluster_r123
+      group: 1
+      joints: ['r2_joint_s', 'r2_joint_l', 'r2_joint_u', 'r2_joint_r', 'r2_joint_b', 'r2_joint_t']
+    - name: cluster_r3_controller
+      ns: cluster_r123
+      group: 2
+      joints: ['r3_joint_1_s', 'r3_joint_2_l', 'r3_joint_3_u', 'r3_joint_4_r', 'r3_joint_5_b', 'r3_joint_6_t']

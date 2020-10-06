@@ -14,9 +14,9 @@
   <!-- controller: Controller name (dx200) -->
   <arg name="controller"/>
 
-        <rosparam command="load" file="$(find core)/config/joint_names_cluster_r123.yaml" />
+        <rosparam command="load" file="$(find core)/config/motion_interface_cluster_r123.yaml" />
 
-	<include file="$(find motoman_driver)/launch/robot_interface_streaming_$(arg controller).launch">
+	<include file="$(find motoman_driver)/launch/robot_multigroup_interface_streaming_$(arg controller).launch">
 		<arg name="robot_ip"   value="$(arg robot_ip)" />
 	</include>
 </launch>
