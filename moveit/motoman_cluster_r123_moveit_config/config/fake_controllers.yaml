@@ -1,0 +1,32 @@
+controller_list:
+  - name: fake_bot_mh50_controller
+    joints:
+      - r3_joint_1_s
+      - r3_joint_2_l
+      - r3_joint_3_u
+      - r3_joint_4_r
+      - r3_joint_5_b
+      - r3_joint_6_t
+  - name: fake_bot_ms210_controller
+    joints:
+      - r2_joint_s
+      - r2_joint_l
+      - r2_joint_u
+      - r2_joint_r
+      - r2_joint_b
+      - r2_joint_t
+  - name: fake_bot_ma2010_controller
+    joints:
+      - r1_joint_1_s
+      - r1_joint_2_l
+      - r1_joint_3_u
+      - r1_joint_4_r
+      - r1_joint_5_b
+      - r1_joint_6_t
+initial:  # Define initial robot poses.
+  - group: bot_mh50
+    pose: default_aims
+  - group: bot_ms210
+    pose: default_aims
+  - group: bot_ma2010
+    pose: default_aims
