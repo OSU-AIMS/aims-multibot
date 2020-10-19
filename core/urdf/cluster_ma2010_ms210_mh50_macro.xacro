@@ -30,7 +30,7 @@
 
       <xacro:motoman_ma2010 prefix="${prefix}r1_"/>
       <joint name="${prefix}r1_joint_origin" type="fixed">
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="0 0 1.052" rpy="0 0 0"/>
         <parent link="${prefix}origin" />
         <child  link="${prefix}r1_base_link" />
       </joint>
@@ -38,7 +38,7 @@
 
       <xacro:motoman_ms210 prefix="${prefix}r2_"/>
       <joint name="${prefix}r2_joint_origin" type="fixed">
-        <origin xyz="0 2 0" rpy="0 0 0"/>
+        <origin xyz="0.733 -2.4281 0.127" rpy="0 0 ${radians(90)}"/>
         <parent link="${prefix}origin"/>
         <child  link="${prefix}r2_base_link"/>
       </joint>
@@ -46,7 +46,7 @@
 
       <xacro:motoman_mh50 prefix="${prefix}r3_"/>
       <joint name="${prefix}r3_joint_origin" type="fixed">
-        <origin xyz=" 0 4 0" rpy="0 0 0"/>
+        <origin xyz="2.03805 -0.66105 0.889" rpy="0 0 ${radians(180)}"/>
         <parent link="${prefix}origin"/>
         <child  link="${prefix}r3_base_link"/>
       </joint>
