@@ -3,7 +3,7 @@
 <xacro:macro name="motoman_mh50" params="prefix">
 
     <!-- Properties -->
-    <material name="yaskawa_blue">
+    <material name="yaskawa_blue_mh50">
           <color rgba="0.12941 0.14902 0.74902 1" />
     </material>
 
@@ -13,7 +13,7 @@
             <geometry>
                 <mesh filename="package://motoman_mh50_support/meshes/visual/mh50_base_link.stl"/>
             </geometry>
-            <material name="yaskawa_blue"/>
+            <material name="yaskawa_blue_mh50"/>
         </visual>
         <collision>
             <geometry>
@@ -26,7 +26,7 @@
             <geometry>
                 <mesh filename="package://motoman_mh50_support/meshes/visual/mh50_link_1_s.stl"/>
             </geometry>
-            <material name="yaskawa_blue"/>
+            <material name="yaskawa_blue_mh50"/>
         </visual>
         <collision>
             <geometry>
@@ -39,7 +39,7 @@
             <geometry>
                 <mesh filename="package://motoman_mh50_support/meshes/visual/mh50_link_2_l.stl"/>
             </geometry>
-            <material name="yaskawa_blue"/>
+            <material name="yaskawa_blue_mh50"/>
         </visual>
         <collision>
             <geometry>
@@ -52,7 +52,7 @@
             <geometry>
                 <mesh filename="package://motoman_mh50_support/meshes/visual/mh50_link_3_u.stl"/>
             </geometry>
-            <material name="yaskawa_blue"/>
+            <material name="yaskawa_blue_mh50"/>
         </visual>
         <collision>
             <geometry>
@@ -65,7 +65,7 @@
             <geometry>
                 <mesh filename="package://motoman_mh50_support/meshes/visual/mh50_link_4_r.stl"/>
             </geometry>
-            <material name="yaskawa_blue"/>
+            <material name="yaskawa_blue_mh50"/>
         </visual>
         <collision>
             <geometry>
@@ -78,7 +78,7 @@
             <geometry>
                 <mesh filename="package://motoman_mh50_support/meshes/visual/mh50_link_5_b.stl"/>
             </geometry>
-            <material name="yaskawa_blue"/>
+            <material name="yaskawa_blue_mh50"/>
         </visual>
         <collision>
             <geometry>
@@ -91,7 +91,7 @@
             <geometry>
                 <mesh filename="package://motoman_mh50_support/meshes/visual/mh50_link_6_t.stl"/>
             </geometry>
-            <material name="yaskawa_blue"/>
+            <material name="yaskawa_blue_mh50"/>
         </visual>
         <collision>
             <geometry>
@@ -162,4 +162,3 @@
 
     </xacro:macro>
 </robot>
-
