@@ -56,6 +56,10 @@
   <exec_depend>pcl_ros</exec_depend>
   <exec_depend>pcl_conversions</exec_depend>
 
+  <exec_depend>motoman_ma2010_support</exec_depend>
+  <exec_depend>motoman_ms210_support</exec_depend>
+  <exec_depend>motoman_mh50_support</exec_depend>
+
   <test_depend>moveit_resources</test_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
