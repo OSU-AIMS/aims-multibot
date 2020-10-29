@@ -15,12 +15,12 @@ hardware_interface:
     - r1_joint_4_r
     - r1_joint_5_b
     - r1_joint_6_t
-    - r2_joint_s
-    - r2_joint_l
-    - r2_joint_u
-    - r2_joint_r
-    - r2_joint_b
-    - r2_joint_t
+    - r2_joint_1_s
+    - r2_joint_2_l
+    - r2_joint_3_u
+    - r2_joint_4_r
+    - r2_joint_5_b
+    - r2_joint_6_t
     - r3_joint_1_s
     - r3_joint_2_l
     - r3_joint_3_u
@@ -50,12 +50,12 @@ controller_list:
     default: True
     type: FollowJointTrajectory
     joints:
-      - r2_joint_s
-      - r2_joint_l
-      - r2_joint_u
-      - r2_joint_r
-      - r2_joint_b
-      - r2_joint_t
+      - r2_joint_1_s
+      - r2_joint_2_l
+      - r2_joint_3_u
+      - r2_joint_4_r
+      - r2_joint_5_b
+      - r2_joint_6_t
   - name: r3_controller
     action_ns: follow_joint_trajectory
     default: True

@@ -12,12 +12,12 @@ controller_list:
       - r1_joint_6_t
 
       - r2_joint_origin
-      - r2_joint_s
-      - r2_joint_l
-      - r2_joint_u
-      - r2_joint_r
-      - r2_joint_b
-      - r2_joint_t
+      - r2_joint_1_s
+      - r2_joint_2_l
+      - r2_joint_3_u
+      - r2_joint_4_r
+      - r2_joint_5_b
+      - r2_joint_6_t
 
       - r3_joint_origin
       - r3_joint_1_s

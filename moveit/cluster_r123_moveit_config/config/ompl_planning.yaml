@@ -174,7 +174,7 @@ r2:
     - LazyPRMstar
     - SPARS
     - SPARStwo
-  projection_evaluator: joints(r2_joint_s,r2_joint_l)
+  projection_evaluator: joints(r2_joint_1_s,r2_joint_2_l)
   longest_valid_segment_fraction: 0.005
 r3:
   default_planner_config: RRTConnect
