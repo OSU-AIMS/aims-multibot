@@ -1,0 +1,32 @@
+controller_list:
+  - name: fake_r1_controller
+    joints:
+      - r1_joint_1_s
+      - r1_joint_2_l
+      - r1_joint_3_u
+      - r1_joint_4_r
+      - r1_joint_5_b
+      - r1_joint_6_t
+  - name: fake_r2_controller
+    joints:
+      - r2_joint_1_s
+      - r2_joint_2_l
+      - r2_joint_3_u
+      - r2_joint_4_r
+      - r2_joint_5_b
+      - r2_joint_6_t
+  - name: fake_r3_controller
+    joints:
+      - r3_joint_1_s
+      - r3_joint_2_l
+      - r3_joint_3_u
+      - r3_joint_4_r
+      - r3_joint_5_b
+      - r3_joint_6_t
+initial:  # Define initial robot poses.
+  - group: r1
+    pose: all-zeros
+  - group: r2
+    pose: all-zeros
+  - group: r3
+    pose: all-zeros
