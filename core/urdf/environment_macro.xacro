@@ -45,6 +45,20 @@
       </geometry>
     </collision>
   </link>
+  <link  name="${prefix}picktable_r3">
+    <visual>
+      <origin xyz="0 0 -0.889" rpy="0 0 ${radians(180)}" />
+      <geometry>
+        <mesh filename="package://core/meshes/bases/pickTable_R3.STL" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.889" rpy="0 0 ${radians(180)}" />
+      <geometry>
+        <mesh filename="package://core/meshes/bases/pickTable_R3.STL" />
+      </geometry>
+    </collision>
+  </link>
 
   <link  name="${prefix}controllerboxes">
     <visual>
@@ -105,6 +119,11 @@
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <parent link="${prefix}r3_base_link" />
     <child link="${prefix}mount_r3" />
+  </joint>
+  <joint name="${prefix}picktable_r3" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="${prefix}r3_base_link" />
+    <child link="${prefix}picktable_r3" />
   </joint>
 
   <joint name="${prefix}controllerboxes_origin" type="fixed">
