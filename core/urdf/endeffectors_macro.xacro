@@ -40,7 +40,7 @@
   <child link="${prefix}eef_r2" />
 </joint>
 <joint name="${prefix}eef_r3_tool0" type="fixed">
-  <origin xyz="0 0 0" rpy="${radians(-90)} 0 0"/>
+  <origin xyz="0 0 0.03" rpy="${radians(-90)} 0 0"/>
   <parent link="${prefix}r3_tool0" />
   <child link="${prefix}eef_r3" />
 </joint>
