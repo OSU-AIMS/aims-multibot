@@ -14,6 +14,12 @@
   <xacro:include filename="$(find motoman_ms210_support)/urdf/ms210_macro.xacro" />
   <xacro:include filename="$(find motoman_mh50_support)/urdf/mh50_macro.xacro" />
 
+  <!-- Environment -->
+  <xacro:include filename="$(find core)/urdf/environment_macro.xacro" />
+
+  <!-- End Effectors (EEF) -->
+  <xacro:include filename="$(find core)/urdf/endeffectors_macro.xacro" />
+
   <!-- Robot Cluster Definition -->
   <xacro:macro name="cluster_ma2010_ms210_mh50" params="prefix">
 
@@ -52,7 +58,8 @@
       </joint>
 
 
-
+      <xacro:aims_environment prefix="${prefix}"/>
+      <xacro:cluster_eef prefix="${prefix}"/>
 
 
 
