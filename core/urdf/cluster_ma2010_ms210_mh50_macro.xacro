@@ -15,7 +15,7 @@
   <xacro:include filename="$(find motoman_mh50_support)/urdf/mh50_macro.xacro" />
 
   <!-- Environment -->
-  <xacro:include filename="$(find core)/urdf/environment_macro.xacro" />
+  <xacro:include filename="$(find aims_environment)/urdf/environment_macro.xacro" />
 
   <!-- End Effectors (EEF) -->
   <xacro:include filename="$(find core)/urdf/endeffectors_macro.xacro" />
@@ -23,7 +23,7 @@
   <!-- Robot Cluster Definition -->
   <xacro:macro name="cluster_ma2010_ms210_mh50" params="prefix">
 
-      <link name="${prefix}origin">
+      <link name="${prefix}origin_global">
         <visual>
           <origin xyz="0 0 0" rpy="0 0 0" />
           <geometry>
@@ -37,7 +37,7 @@
       <xacro:motoman_ma2010 prefix="${prefix}r1_"/>
       <joint name="${prefix}r1_joint_origin" type="fixed">
         <origin xyz="0 0 1.052" rpy="0 0 0"/>
-        <parent link="${prefix}origin" />
+        <parent link="${prefix}origin_global" />
         <child  link="${prefix}r1_base_link" />
       </joint>
 
@@ -45,7 +45,7 @@
       <xacro:motoman_ms210 prefix="${prefix}r2_"/>
       <joint name="${prefix}r2_joint_origin" type="fixed">
         <origin xyz="0.733 -2.4281 0.127" rpy="0 0 ${radians(90)}"/>
-        <parent link="${prefix}origin"/>
+        <parent link="${prefix}origin_global"/>
         <child  link="${prefix}r2_base_link"/>
       </joint>
 
@@ -53,7 +53,7 @@
       <xacro:motoman_mh50 prefix="${prefix}r3_"/>
       <joint name="${prefix}r3_joint_origin" type="fixed">
         <origin xyz="2.03805 -0.66105 0.889" rpy="0 0 ${radians(180)}"/>
-        <parent link="${prefix}origin"/>
+        <parent link="${prefix}origin_global"/>
         <child  link="${prefix}r3_base_link"/>
       </joint>
 

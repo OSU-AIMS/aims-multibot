@@ -174,7 +174,7 @@
     <child link="${prefix}tormach" />
   </joint>
   <joint name="${prefix}cognex_origin" type="fixed">
-    <origin xyz="1 -0.7 3.2" rpy="0 0 ${radians(90)}"/>
+    <origin xyz="1 -0.7 3.2" rpy="0 0 ${radians(180)}"/>
     <parent link="origin_global" />
     <child link="${prefix}cognex" />
   </joint>
