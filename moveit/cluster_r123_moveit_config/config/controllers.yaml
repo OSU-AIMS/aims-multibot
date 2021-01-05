@@ -3,7 +3,6 @@ controller_list:
     action_ns: joint_trajectory_action
     type: FollowJointTrajectory
     joints:
-      - r1_joint_origin
       - r1_joint_1_s
       - r1_joint_2_l
       - r1_joint_3_u
@@ -11,7 +10,6 @@ controller_list:
       - r1_joint_5_b
       - r1_joint_6_t
 
-      - r2_joint_origin
       - r2_joint_1_s
       - r2_joint_2_l
       - r2_joint_3_u
@@ -19,7 +17,6 @@ controller_list:
       - r2_joint_5_b
       - r2_joint_6_t
 
-      - r3_joint_origin
       - r3_joint_1_s
       - r3_joint_2_l
       - r3_joint_3_u
