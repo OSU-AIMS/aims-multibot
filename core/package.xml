@@ -31,8 +31,8 @@
 
   <!-- META DATA -->
   <license>BSD-Clause 4</license>
-  <author email="acbuynak@gmail.com">acbuynak</author>
-  <maintainer email="acbuynak@gmail.com">acbuynak</maintainer>
+  <author>acbuynak</author>
+  <maintainer email="buynak.9@buckeyemail.osu.edu">acbuynak (AIMS Lab @ The Ohio State University)</maintainer>
 
   <!-- The *depend tags are used to specify dependencies -->
   <!-- Dependencies can be catkin packages or system dependencies -->
@@ -46,7 +46,6 @@
   <build_depend>pcl_ros</build_depend>
   <build_depend>pcl_conversions</build_depend>
 
-  <exec_depend>moveit_mh5_config</exec_depend>
   <exec_depend>moveit_core</exec_depend>
   <exec_depend>moveit_commander</exec_depend>
   <exec_depend>moveit_fake_controller_manager</exec_depend>
@@ -62,9 +61,4 @@
 
   <test_depend>moveit_resources</test_depend>
 
-  <!-- The export tag contains other, unspecified, tags -->
-  <export>
-    <!-- Other tools can request additional information be placed here -->
-
-  </export>
 </package>

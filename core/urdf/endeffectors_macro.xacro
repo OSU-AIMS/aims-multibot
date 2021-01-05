@@ -2,49 +2,47 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 <xacro:macro name="cluster_eef" params="prefix">
 
-  <!-- Link List -->
-<link  name="${prefix}eef_r2">
-  <visual>
-    <origin xyz="0 0 0" rpy="0 0 0" />
-    <geometry>
-      <mesh filename="package://core/meshes/eef/r2_approx.stl" />
-    </geometry>
-  </visual>
-  <collision>
-    <origin xyz="0 0 0" rpy="0 0 0" />
-    <geometry>
-      <mesh filename="package://core/meshes/eef/r2_approx.stl" />
-    </geometry>
-  </collision>
-</link>
-<link  name="${prefix}eef_r3">
-  <visual>
-    <origin xyz="0 0 0" rpy="0 0 0" />
-    <geometry>
-      <mesh filename="package://core/meshes/eef/r3_approx.stl" />
-    </geometry>
-  </visual>
-  <collision>
-    <origin xyz="0 0 0" rpy="0 0 0" />
-    <geometry>
-      <mesh filename="package://core/meshes/eef/r3_approx.stl" />
-    </geometry>
-  </collision>
-</link>
+  <!-- R2 EEF -->
+  <link  name="${prefix}eef_r2">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://core/meshes/eef/r2_approx.stl" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://core/meshes/eef/r2_approx.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="${prefix}eef_r2_tool0" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="${prefix}r2_tool0" />
+    <child link="${prefix}eef_r2" />
+  </joint>
 
-
-<!-- Joint List -->
-<joint name="${prefix}eef_r2_tool0" type="fixed">
-  <origin xyz="0 0 0" rpy="0 0 0"/>
-  <parent link="${prefix}r2_tool0" />
-  <child link="${prefix}eef_r2" />
-</joint>
-<joint name="${prefix}eef_r3_tool0" type="fixed">
-  <origin xyz="0 0 0.03" rpy="${radians(-90)} 0 0"/>
-  <parent link="${prefix}r3_tool0" />
-  <child link="${prefix}eef_r3" />
-</joint>
-
+  <!-- R3 EEF -->
+  <link  name="${prefix}eef_r3">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://core/meshes/eef/r3_approx.stl" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://core/meshes/eef/r3_approx.stl" />
+      </geometry>
+    </collision>
+    <joint name="${prefix}eef_r3_tool0" type="fixed">
+      <origin xyz="0 0 0.03" rpy="${radians(-90)} 0 0"/>
+      <parent link="${prefix}r3_tool0" />
+      <child link="${prefix}eef_r3" />
+    </joint>
+  </link>
 
 </xacro:macro>
 </robot>
