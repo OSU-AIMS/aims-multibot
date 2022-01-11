@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<robot name="aims_wc1" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find aims_wc1_support)/urdf/cluster_ma2010_ms210_mh50_macro.xacro" />
+  <xacro:cluster_ma2010_ms210_mh50 prefix=""/>
+</robot>

@@ -1,0 +1,21 @@
+<!--
+  Manipulator specific version of 'robot_interface_streaming.launch'.
+
+  Defaults provided for Work Cell #1 (wc1):
+   - 18 joints
+
+  Usage:
+    robot_interface_streaming_wc1.launch robot_ip:=<value> controller:=<dx200>
+-->
+<launch>
+  <arg name="robot_ip" doc="IP Address of Controller"/>
+
+  <!-- controller: Controller name (dx200) -->
+  <arg name="controller" default="dx200"/>
+
+  <rosparam command="load" file="$(find aims_wc1_support)/config/motion_interface_wc1.yaml" />
+
+  <include file="$(find motoman_driver)/launch/robot_multigroup_interface_streaming_$(arg controller).launch">
+    <arg name="robot_ip"   value="$(arg robot_ip)" />
+  </include>
+</launch>

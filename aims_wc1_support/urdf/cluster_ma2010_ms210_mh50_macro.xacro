@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find motoman_resources)/urdf/common_materials.xacro"/>
+  <xacro:include filename="$(find motoman_ma2010_support)/urdf/ma2010_macro.xacro" />
+  <xacro:include filename="$(find motoman_ms210_support)/urdf/ms210_macro.xacro" />
+  <xacro:include filename="$(find motoman_mh50_support)/urdf/mh50_macro.xacro" />
+
+  <!-- Robot Cluster Definition -->
+  <xacro:macro name="cluster_ma2010_ms210_mh50" params="prefix">
+
+    <link name="${prefix}origin">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <cylinder length="0.01" radius="3" />
+        </geometry>
+        <xacro:material_yaskawa_white/>
+      </visual>
+    </link>
+
+    <xacro:motoman_ma2010 prefix="${prefix}r1_"/>
+    <joint name="${prefix}r1_joint_origin" type="fixed">
+      <origin xyz="0 0 1.052" rpy="0 0 0"/>
+      <parent link="${prefix}origin" />
+      <child  link="${prefix}r1_base_link" />
+    </joint>
+
+    <xacro:motoman_ms210 prefix="${prefix}r2_"/>
+    <joint name="${prefix}r2_joint_origin" type="fixed">
+      <origin xyz="0.733 -2.4281 0.127" rpy="0 0 ${radians(90)}"/>
+      <parent link="${prefix}origin"/>
+      <child  link="${prefix}r2_base_link"/>
+    </joint>
+
+    <xacro:motoman_mh50 prefix="${prefix}r3_"/>
+    <joint name="${prefix}r3_joint_origin" type="fixed">
+      <origin xyz="2.03805 -0.66105 0.889" rpy="0 0 ${radians(180)}"/>
+      <parent link="${prefix}origin"/>
+      <child  link="${prefix}r3_base_link"/>
+    </joint>
+
+  </xacro:macro>
+</robot>

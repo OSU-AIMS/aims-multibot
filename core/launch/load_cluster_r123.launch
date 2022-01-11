@@ -1,4 +1,0 @@
-
-<launch>
-	<param name="robot_description" command="$(find xacro)/xacro --inorder '$(find core)/urdf/cluster_ma2010_ms210_mh50.xacro'" />
-</launch>

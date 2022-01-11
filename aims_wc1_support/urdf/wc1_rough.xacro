@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<robot name="aims_wc1" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find aims_wc1_support)/urdf/cluster_ma2010_ms210_mh50_macro.xacro" />
+  <xacro:cluster_ma2010_ms210_mh50 prefix=""/>
+
+  <!-- Environment -->
+<!--
+  <xacro:include filename="$(find aims_wc1_support)/urdf/environment_macro.xacro" />
+  <xacro:aims_environment prefix="${prefix}"/>   
+-->
+
+  <!-- End Effectors (EEF) -->
+<!--
+  <xacro:include filename="$(find aims_wc1_support)/urdf/endeffectors_macro.xacro" />
+  <xacro:cluster_eef prefix="${prefix}"/>
+-->
+
+</robot>

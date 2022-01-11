@@ -7,13 +7,13 @@
     <visual>
       <origin xyz="0 0 -1.051999" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://core/meshes/bases/visual/asm_R1_mount_labCoords.STL" />
+        <mesh filename="package://aims_wc1_support/meshes/bases/visual/asm_R1_mount_labCoords.STL" />
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 -1.051999" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://core/meshes/bases/visual/asm_R1_mount_labCoords.STL" />
+        <mesh filename="package://aims_wc1_support/meshes/bases/visual/asm_R1_mount_labCoords.STL" />
       </geometry>
     </collision>
   </link>
@@ -21,13 +21,13 @@
     <visual>
       <origin xyz="0 0 -.127" rpy="0 0 ${radians(-90)}" />
       <geometry>
-        <mesh filename="package://core/meshes/bases/visual/asm_R2_mount_labCoords.STL" />
+        <mesh filename="package://aims_wc1_support/meshes/bases/visual/asm_R2_mount_labCoords.STL" />
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 -.127" rpy="0 0 ${radians(-90)}" />
       <geometry>
-        <mesh filename="package://core/meshes/bases/visual/asm_R2_mount_labCoords.STL" />
+        <mesh filename="package://aims_wc1_support/meshes/bases/visual/asm_R2_mount_labCoords.STL" />
       </geometry>
     </collision>
   </link>
@@ -35,13 +35,13 @@
     <visual>
       <origin xyz="0 0 -0.889" rpy="${radians(90)} 0 0" />
       <geometry>
-        <mesh filename="package://core/meshes/bases/visual/asm_R3_mount_labCoords.STL" />
+        <mesh filename="package://aims_wc1_support/meshes/bases/visual/asm_R3_mount_labCoords.STL" />
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 -0.889" rpy="${radians(90)} 0 0" />
       <geometry>
-        <mesh filename="package://core/meshes/bases/visual/asm_R3_mount_labCoords.STL" />
+        <mesh filename="package://aims_wc1_support/meshes/bases/visual/asm_R3_mount_labCoords.STL" />
       </geometry>
     </collision>
   </link>
@@ -49,13 +49,13 @@
     <visual>
       <origin xyz="0 0 -0.889" rpy="0 0 ${radians(180)}" />
       <geometry>
-        <mesh filename="package://core/meshes/bases/pickTable_R3.STL" />
+        <mesh filename="package://aims_wc1_support/meshes/bases/pickTable_R3.STL" />
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 -0.889" rpy="0 0 ${radians(180)}" />
       <geometry>
-        <mesh filename="package://core/meshes/bases/pickTable_R3.STL" />
+        <mesh filename="package://aims_wc1_support/meshes/bases/pickTable_R3.STL" />
       </geometry>
     </collision>
   </link>
@@ -64,13 +64,13 @@
     <visual>
       <origin xyz="-1 -0.8 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://core/meshes/equipment/dx200_controller_boxes.STL" />
+        <mesh filename="package://aims_wc1_support/meshes/equipment/dx200_controller_boxes.STL" />
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 -0.889" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://core/meshes/equipment/dx200_controller_boxes.STL" />
+        <mesh filename="package://aims_wc1_support/meshes/equipment/dx200_controller_boxes.STL" />
       </geometry>
     </collision>
   </link>
@@ -78,13 +78,13 @@
     <visual>
       <origin xyz="0 -4 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://core/meshes/equipment/tormach_mill_rough.STL" />
+        <mesh filename="package://aims_wc1_support/meshes/equipment/tormach_mill_rough.STL" />
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 -4 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://core/meshes/equipment/tormach_mill_rough.STL" />
+        <mesh filename="package://aims_wc1_support/meshes/equipment/tormach_mill_rough.STL" />
       </geometry>
     </collision>
   </link>
@@ -92,13 +92,13 @@
     <visual>
       <origin xyz="1 -0.7 3.2" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://core/meshes/equipment/cognex_ceiling_assembly.STL" />
+        <mesh filename="package://aims_wc1_support/meshes/equipment/cognex_ceiling_assembly.STL" />
       </geometry>
     </visual>
     <collision>
       <origin xyz="1 -0.7 3.2" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://core/meshes/equipment/cognex_ceiling_assembly.STL" />
+        <mesh filename="package://aims_wc1_support/meshes/equipment/cognex_ceiling_assembly.STL" />
       </geometry>
     </collision>
   </link>

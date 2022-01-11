@@ -1,0 +1,32 @@
+<!--
+  Manipulator specific version of the state visualizer.
+
+  Defaults provided for Work Cell #1 (wc1):
+   - 18 joints
+
+  Usage:
+    robot_state_visualize_wc1.launch robot_ip:=<value> controller:=<dx200>
+-->
+<launch>
+  <arg name="robot_ip" doc="IP of controller" />
+
+  <!-- controller: Controller name (dx200) -->
+  <arg name="controller" default="dx200" doc="Series of the controller (dx200)"/>
+
+  <!-- Custom joint names for ROS side usage -->
+  <rosparam command="load" file="$(find aims_wc1_support)/config/joint_names_wc1.yaml" />
+
+  <!-- Parameters mapping our custom joint naming to the real controller --> 
+  <rosparam command="load" file="$(find aims_wc1_support)/config/motion_interface_wc1.yaml" />
+
+  <!-- Common Visualization Launch Procedure -->
+  <include file="$(find motoman_driver)/launch/robot_state_$(arg controller).launch">
+    <arg name="robot_ip"   value="$(arg robot_ip)" />
+  </include>
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+  <include file="$(find aims_wc1_support)/launch/load_wc1.launch" />
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find industrial_robot_client)/config/robot_state_visualize.rviz" required="true" />
+</launch>

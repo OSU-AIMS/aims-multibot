@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="2">
+  <name>aims_wc1_support</name>
+  <version>0.1.0</version>
+  <description>
+    <p>
+        OSU AIMS support for lab work cell #1 (wc1)
+    </p>
+    <p>
+        This package contains physical configuration data and launch files
+        for Work Cell #1 at the AIMS Lab @ Ohio State.
+    </p>
+    <p>
+     <b>Specifications</b>
+    </p>
+    <ul>
+     <li>MS210  - Default</li>
+     <li>MH50   - Default</li>
+     <li>MA2010 - Default</li>
+    </ul>
+    <p>
+        All urdfs are based on emperically measured locations provided by acbuynak.
+    </p>
+    <p>
+        Before using any of the configuration files and / or meshes included
+        in this package, be sure to check they are correct for the particular
+        robot model(s) and configuration you intend to use them with.
+    </p>
+  </description>
+  <author>acbuynak</author>
+  <maintainer email="acbuynak@gmail.com">acbuynak (AIMS Lab @ The Ohio State University)</maintainer>
+  <license>Apache 2.0</license>
+
+  <url type="website">http://cdme.osu.edu/aims-lab</url>
+  <url type="bugtracker">https://github.com/osu-aims/aims-robots-all/issues-</url>
+  <url type="repository">https://github.com/osu-aims/aims-robots-all</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roslaunch</depend>
+
+  <exec_depend>motoman_ma2010_support</exec_depend>
+  <exec_depend>motoman_ms210_support</exec_depend>
+  <exec_depend>motoman_mh50_support</exec_depend>
+
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  <exec_depend>motoman_driver</exec_depend>
+  <exec_depend>motoman_resources</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>rviz</exec_depend>
+  <exec_depend>xacro</exec_depend>
+
+  <export>
+    <architecture_independent />
+  </export>
+</package>
