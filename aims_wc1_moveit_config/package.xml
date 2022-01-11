@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="1">
+  <name>aims_wc1_moveit_config</name>
+  <version>0.2.0</version>
+  <description>
+    <p>
+        OSU AIMS "MoveIt Config" for lab work cell #1 (wc1)
+    </p>
+    <p>
+        This package contains MoveIt configuration data and launch files
+        for Work Cell #1 at the AIMS Lab @ Ohio State.
+    </p>
+    <p>
+        Before using any of the configuration files and / or meshes included
+        in this package, be sure to check they are correct for the particular
+        robot model(s) and configuration you intend to use them with.
+    </p>
+  </description>
+  <author>acbuynak</author>
+  <maintainer email="acbuynak@gmail.com">acbuynak (AIMS Lab @ The Ohio State University)</maintainer>
+  <license>Apache 2.0</license>
+
+  <url type="website">http://cdme.osu.edu/aims-lab</url>
+  <url type="bugtracker">https://github.com/osu-aims/aims-robots-all/issues-</url>
+  <url type="repository">https://github.com/osu-aims/aims-robots-all</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>moveit_ros_move_group</run_depend>
+  <run_depend>moveit_fake_controller_manager</run_depend>
+  <run_depend>moveit_kinematics</run_depend>
+  <run_depend>trac_ik_kinematics_plugin</run_depend>
+  <run_depend>moveit_planners_ompl</run_depend>
+  <run_depend>moveit_ros_visualization</run_depend>
+  <run_depend>moveit_setup_assistant</run_depend>
+  <run_depend>joint_state_publisher</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>tf2_ros</run_depend>
+  <run_depend>xacro</run_depend>
+  <!-- This package is referenced in the warehouse launch files, but does not build out of the box at the moment. Commented the dependency until this works. -->
+  <!-- <run_depend>warehouse_ros_mongo</run_depend> -->
+
+  <!-- Robot Support Packages -->
+  <run_depend>aims_wc1_support</run_depend>
+
+</package>

@@ -24,9 +24,9 @@ controller_list:
       - r3_joint_5_b
       - r3_joint_6_t
 initial:  # Define initial robot poses.
-  - group: r1
+  - group: ma2010
     pose: all-zeros
-  - group: r2
+  - group: ms210
     pose: all-zeros
-  - group: r3
+  - group: mh50
     pose: all-zeros

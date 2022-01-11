@@ -14,7 +14,7 @@
   <param name="trajectory_execution/allowed_start_tolerance" value="0.01"/> <!-- default 0.01 -->
 
   <!-- Load the robot specific controller manager; this sets the moveit_controller_manager ROS parameter -->
-  <arg name="moveit_controller_manager" default="cluster_ma2010_ms210_mh50" />
-  <include file="$(find cluster_r123_moveit_config)/launch/$(arg moveit_controller_manager)_moveit_controller_manager.launch.xml" />
+  <arg name="moveit_controller_manager" default="aims_wc1" />
+  <include file="$(find aims_wc1_moveit_config)/launch/$(arg moveit_controller_manager)_moveit_controller_manager.launch.xml" />
 
 </launch>

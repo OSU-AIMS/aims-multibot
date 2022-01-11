@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1.3)
-project(cluster_r123_moveit_config)
+project(aims_wc1_moveit_config)
 
 find_package(catkin REQUIRED)
 
